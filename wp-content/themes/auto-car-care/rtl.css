@@ -1,0 +1,242 @@
+body,h1, h2, h3, h4, h5, h6,.menubar,.more-btn a,.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt,#theme-sidebar button[type="submit"], #footer button[type="submit"]{
+    font-family: 'Rubik', sans-serif;
+}
+
+p{
+    letter-spacing: unset;
+}
+
+.center{
+    border-color: #bbb;
+}
+
+/* color 1 */
+
+a,.search-box i,.main-navigation a:hover,.headerbox i,.box-content a, #theme-sidebar .textwidget a, #footer .textwidget a, .comment-body a, .entry-content a, .entry-summary a,a.page-numbers:hover,#theme-sidebar h3,#theme-sidebar a:hover,.main-navigation .current_page_item > a, .main-navigation .current-menu-item > a, .main-navigation .current_page_ancestor > a,.headerbox i:hover, .headerbox i:hover:after,#about h3,#about p i{
+    color: #fdb719;
+}
+
+#theme-sidebar button[type="submit"], #footer button[type="submit"],.prev.page-numbers, .next.page-numbers,.page-numbers,#theme-sidebar .tagcloud a:hover,span.meta-nav,#comments input[type="submit"],.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt,#slider .carousel-control-prev-icon, #slider .carousel-control-next-icon,button[type="submit"]{
+    background: #fdb719; 
+}
+
+.main-navigation a, body, .logo p, .more-btn i,.page-box p,.box-info span,#theme-sidebar a,#theme-sidebar li{
+    color: #736f66;
+}
+
+#theme-sidebar button[type="submit"], #footer button[type="submit"],#theme-sidebar button[type="submit"], #footer button[type="submit"], .prev.page-numbers, .next.page-numbers, .page-numbers, #theme-sidebar .tagcloud a:hover, span.meta-nav, #comments input[type="submit"], .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt,#slider .carousel-control-prev-icon, #slider .carousel-control-next-icon{
+    color: #212121;
+}
+
+a.page-numbers:hover{
+    background: #212121;
+}
+
+a:hover{
+    color: #bf8400;
+}
+
+#footer .tagcloud a:hover,.search_inner form.search-form{
+    border-color: #fdb719;
+}
+
+/* topbar */
+
+.topbarbox {
+    padding: 12px 0;
+    background: #212121;
+}
+.topbarbox a{
+   color: #817c72;
+   margin-left: 15px;
+}
+.logo h1 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+/* header */
+
+.search-box i{
+    border: none;
+}
+.search-box {
+    text-align: left;
+}
+button.search_btn i{
+    font-size: 20px;
+}
+.social-media i{
+    font-size: 18px;
+}
+span.cart-value.simplep {
+    background: #fdb719;
+    font-size: 12px;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    color: #212121;
+    font-weight: bold;
+    position: relative;
+    right: -6px;
+    top: -12px;
+}
+#mySidenav {
+    text-align: left;
+    display: block;
+}
+.menubar{
+    border: none;
+    padding: 12px 0;
+}
+.main-navigation li,.main-navigation li:last-child{
+    border: none;
+}
+.headerbox{
+    background: #f4f4f4;
+}
+.headerbox i, .more-btn i {
+    border-radius: 0;
+    padding: 0;
+    background: transparent;
+}
+.headerbox i:after{
+    content: none;
+}
+.social-media{
+    padding: 0;
+    text-align: left;
+}
+.headerbox p,.search-box i{
+    font-size: 16px;
+    padding: 0;
+}
+.main-navigation a{
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.more-btn a {
+    font-weight: normal;
+    font-size: 14px;
+    padding: 12px;
+    border: solid 2px #fdb719;
+}
+.more-btn i {
+    display: none;
+}
+#slider .carousel-caption {
+    left: 55%;
+}
+#slider .inner_carousel h2,.woocommerce ul.products li.product .button, a.checkout-button.button.alt.wc-forward,h2.woocommerce-loop-product__title, .woocommerce div.product .product_title,.page-box h4 a {
+    font-weight: 600;
+    letter-spacing: unset;
+}
+
+#about h3 {
+    font-size: 20px;
+    letter-spacing: unset;
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
+    text-transform: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#contact {
+    position: relative;
+}
+.contact-box {
+    position: absolute;
+    bottom: 0;
+}
+
+.contact-box input[type="text"], .contact-box input[type="email"], .contact-box input[type="phno"], .contact-box input[type="password"], .contact-box textarea {
+    border: none;
+    background: #fdb719;
+    width: 23%;
+    font-size: 16px;
+    padding: 10px 10px;
+    margin: 0 0 0 20px;
+    height: auto;
+}
+.contact-box input[type="submit"] {
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
+}
+
+.center1 .ring::before {
+    background: #fdb719;
+}
+.center2 .ring::before {
+    background: #151515;
+}
+
+.bypostauthor > .comment-body > .comment-meta > .comment-author .avatar {
+  border: 1px solid #333;
+  padding: 2px;
+}
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  right: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* Above WP toolbar. */
+}
+
+@media screen and (max-width: 767px){
+    .innermenubox{
+        padding: 0;
+    }
+    .logo,.social-media,.more-btn,.topbarbox {
+        text-align: center;
+    }
+    .search-box,#about .more-btn{
+        text-align: right;
+    }
+    #slider .carousel-caption {
+        left: 15%;
+        right: 15%;
+        padding: 0;
+        bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    #slider .carousel-caption {
+        left: 15%;
+        right: 15%;
+        bottom: auto;
+        padding: 0;
+    }
+}
