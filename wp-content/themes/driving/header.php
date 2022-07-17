@@ -86,40 +86,19 @@
     <div class="sidebar-menus">
         <div class="container">
             <div class="remove-one"><i class="fal fa-times"></i></div>
-            <div class="header-menu-item">
-                <ul>
-                    <li><a data-bs-toggle="collapse" href="#collapseExample">Home +</a>
-                        <ul  class="collapse" id="collapseExample">
-                            <li><a href="index-2.html">Home v1</a></li>
-                            <li><a href="home-v2.html">Home v2</a></li>
-                            <li><a href="home-v3.html">Home v3</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="about-us.html">About Us</a></li> 
-                    <li><a data-bs-toggle="collapse" href="#Pages">Pages +</a>
-                        <ul class="collapse" id="Pages">
-                            <li><a href="coming-soon.html">Coming Soon</a></li>
-                            <li><a class="border-0" href="error.html">Error</a></li>
-                        </ul>
-                    </li>
-                    <li><a data-bs-toggle="collapse" href="#coll">Courses +</a>
-                        <ul  class="collapse" id="coll">
-                            <li><a href="courses.html">Courses</a></li>
-                            <li><a href="courses-details.html">Courses Details</a></li>
-                        </ul>
-                    </li>
-                    <li><a data-bs-toggle="collapse" href="#Example">News +</a>
-                        <ul  class="collapse" id="Example">
-                            <li><a href="news.html">News</a></li>
-                            <li><a href="news-details.html">News details</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                </ul>
-            </div>
+			<div class="header-menu-item">
+			<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					)
+				);
+			?>
+			</div>
             <div class="search-option">
                 <div class="menu-btn">
-                    <a class="theme-btn" href="courses.html">Admission Course</a>
+                    <a class="theme-btn" href="courses.html">Book Now</a>
                 </div>
             </div>
         </div>

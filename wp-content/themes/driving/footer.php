@@ -83,10 +83,10 @@
                 <div class="footer-bottom-item text-center d-block">
 				
                     <p>
-						<span>&#169;</span><?php echo date('Y'); ?> Kama's . 
+						<span>&#169;</span><?php echo date('Y'); ?> Kama's Driving School. 
 						<?php
 						/* translators: 1: Theme name, 2: Theme author. */
-						printf( esc_html__( 'Developed By: %1$s' ), '<a href="https://sochpoint.com/">Soch Point</a>' );
+						printf( esc_html__( 'Made with 💖 by %1$s' ), '<a href="https://sochpoint.com/" class="text-white">Soch Point</a>' );
 						?>
 				</p>
                     <a class="footer-button" href="index-2.html"><i class="fal fa-chevron-up"></i></a>

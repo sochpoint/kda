@@ -3,15 +3,46 @@
     while ( have_posts() ) :
         the_post();
 
+    $banner_title = get_field('banner_title');
+    $banner_content = get_field('banner_description');
+    $banner_image = get_field('banner_image');
+    $banner_btn_1 = get_field('banner_button_1');
+    $banner_btn_2 = get_field('banner_button_2');
+    
+
+
 ?>
     <!-- home-3-banner-area -->
-    <section class="home-3-banner-area">
+    <?php $banner_image = get_field( 'banner_image' ); ?>
+    <section class="home-3-banner-area" style="background: url('<?php echo esc_url( $banner_image['url'] ); ?>'); background-position: center; background-size: cover; background-repeat: no-repeat;">
         <div class="container">
             <div class="banner-heading">
-                <h1 class="wow fadeInDown" data-wow-duration="2s">We Learn to Drive Easily </h1>
-                <p class="wow fadeInDown" data-wow-duration="3s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                <a class="theme-btn wow fadeInDown" data-wow-duration="3.20s" href="news-details.html">Learn More</a>
-                <a class="theme-btn two wow fadeInDown" data-wow-duration="3.20s" href="contact-us.html">Contact Us</a>
+                <?php if ( $banner_title = get_field( 'banner_title' ) ) : ?>
+                <h1 class="wow fadeInDown" data-wow-duration="2s">
+                    <?php echo esc_html( $banner_title ); ?>
+                </h1>
+                <?php endif; ?>
+                <?php if ( $banner_description = get_field( 'banner_description' ) ) : ?>
+                <p class="wow fadeInDown" data-wow-duration="3s"><?php echo $banner_description; ?></p>
+                <?php endif; ?>
+                <?php
+                $link = get_field( 'banner_button_1' );
+                if ( $link ) :
+                    $link_url = $link['url'];
+                    $link_title = $link['title'];
+                    $link_target = $link['target'] ? $link['target'] : '_self';
+                    ?>
+                    <a class="theme-btn wow fadeInDown" data-wow-duration="3.20s" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                <?php endif; ?>
+                <?php
+                $link = get_field( 'banner_button_2' );
+                if ( $link ) :
+                    $link_url = $link['url'];
+                    $link_title = $link['title'];
+                    $link_target = $link['target'] ? $link['target'] : '_self';
+                    ?>
+                    <a class="theme-btn two wow fadeInDown" data-wow-duration="3.20s" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                <?php endif; ?>
             </div>
         </div>
     </section>
@@ -222,9 +253,17 @@
                 <div class="col-lg-6 wow fadeInLeftBig" data-wow-duration="1.30s">
                     <div class="aboutIsotop">
                         <div class="title">
-                            <h6>((About Us))</h6>
-                            <h1>Why would you choose our driving school?</h1>
-                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        <?php if ( $teaser_title = get_field( 'teaser_title' ) ) : ?>
+	                        <h6><?php echo esc_html( $teaser_title ). ' >>'; ?></h6>
+                        <?php endif; ?>
+                        <?php if ( $section_title = get_field( 'section_title' ) ) : ?>
+	                        <h2><?php echo esc_html( $section_title ); ?></h2>
+                        <?php endif; ?>
+                       
+                        <?php if ( $description = get_field( 'description' ) ) : ?>
+	                      <?php echo $description; ?>
+                        <?php endif; ?>
+                            
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
@@ -238,16 +277,28 @@
                                         </svg>
                                     </span>
                                     <div class="funfact-text">
-                                        <h4><span class="counter">22</span> k+</h4>
-                                        <p>Course Complete</p>
+                                        <?php if ( $counter_first_value = get_field( 'counter_first_value' ) ) : ?>
+                                            <h4>
+                                                <span class="counter"><?php echo esc_html( $counter_first_value ); ?></span>
+                                            </h4>
+                                        <?php endif; ?>
+                                        <?php if ( $counter_first_text = get_field( 'counter_first_text' ) ) : ?>
+                                            <p><?php echo esc_html( $counter_first_text ); ?></p>
+                                        <?php endif; ?>
                                     </div>
                                 </div>
                                 <div class="funfact-item">
                                     <span class="completed"><i class="flaticon-steering-wheel"></i>
                                     </span>
                                     <div class="funfact-text">
-                                        <h4><span class="counter">2.5</span> k+</h4>
-                                        <p>Driving learners</p>
+                                    <?php if ( $counter_second_value = get_field( 'counter_second_value' ) ) : ?>
+                                            <h4>
+                                                <span class="counter"><?php echo esc_html( $counter_second_value ); ?></span>
+                                            </h4>
+                                        <?php endif; ?>
+                                        <?php if ( $counter_second_text = get_field( 'counter_second_text' ) ) : ?>
+                                            <p><?php echo esc_html( $counter_second_text ); ?></p>
+                                        <?php endif; ?>
                                     </div>
                                 </div>
                             </div>
@@ -255,15 +306,27 @@
                                 <div class="funfact-item items-two">
                                     <span class="completed"><i class="flaticon-manager Author"></i></span>
                                     <div class="funfact-text">
-                                        <h4><span class="counter">22</span> k+</h4>
-                                        <p>Experience Instructors</p>
+                                        <?php if ( $counter_third_value = get_field( 'counter_third_value' ) ) : ?>
+                                            <h4>
+                                                <span class="counter"><?php echo esc_html( $counter_third_value ); ?></span>
+                                            </h4>
+                                        <?php endif; ?>
+                                        <?php if ( $counter_third_text = get_field( 'counter_third_text' ) ) : ?>
+                                            <p><?php echo esc_html( $counter_third_text ); ?></p>
+                                        <?php endif; ?>
                                     </div>
                                 </div>
                                 <div class="funfact-item">
                                     <span class="completed"><i class="flaticon-winner"></i></span>
                                     <div class="funfact-text">
-                                        <h4><span class="counter">2.5</span> k+</h4>
-                                        <p>Awards Winner</p>
+                                        <?php if ( $counter_fourth_value = get_field( 'counter_fourth_value' ) ) : ?>
+                                            <h4>
+                                                <span class="counter"><?php echo esc_html( $counter_fourth_value ); ?></span>
+                                            </h4>
+                                        <?php endif; ?>
+                                        <?php if ( $counter_fourth_text = get_field( 'counter_fourth_text' ) ) : ?>
+                                            <p><?php echo esc_html( $counter_fourth_text ); ?></p>
+                                        <?php endif; ?>
                                     </div>
                                 </div>
                             </div>
@@ -272,27 +335,11 @@
                 </div>
                 <div class="col-lg-6 wow fadeInRightBig" data-wow-duration="1.30s">
                     <div class="images-area">
-                        <div class="images">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/h2-about-area-1.png" alt="">
-                        </div>
-                        <div class="images">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/h2-about-area-2.png" alt="">
-                        </div>
-                        <div class="images">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/h2-about-area-4.png" alt="">
-                        </div>
-                        <div class="images">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/h3-about-img-7.png" alt="">
-                        </div>
-                        <div class="image absulet-1">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/h2-about-area-5.png" alt="">
-                        </div>
-                        <div class="images absulet-3">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/h2-about-area-6.png" alt="">
-                        </div>
-                        <div class="images absulet-2">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/h2-about-area-3.png" alt="">
-                        </div>
+                    <?php
+                    $section_image = get_field( 'section_image' );
+                    if ( $section_image ) : ?>
+                        <img src="<?php echo esc_url( $section_image['url'] ); ?>" alt="<?php echo esc_attr( $section_image['alt'] ); ?>" />
+                    <?php endif; ?>
                     </div>
                 </div>
             </div>
@@ -307,52 +354,33 @@
                 <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
             </div>
             <div class="courses-images owl-carousel">
-                <div class="item"> 
+            <?php
+            $loop = new WP_Query(
+                array(
+                    'post_type' => 'our-course', // This is the name of your post type - change this as required,
+                    'posts_per_page' => -1 // This is the amount of posts per page you want to show
+                )
+            );
+            while ( $loop->have_posts() ) : $loop->the_post();
+            // The content you want to loop goes in here:
+            ?>    
+            <div class="item"> 
                     <div class="course-item"> 
                         <div class="courses-img">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/courses-h1-img.png" alt="">
                         </div>
                         <div class="courses-img-heading">
                             <div class="img-heading">
-                                <h3>Learner Drivers</h3>
+                                <h3><?php the_title(); ?></h3>
                                 <h4>$315</h4>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consect- etur adipiscing elit, sed do eiusmod</p>
+                            <p><?php the_content(); ?></p>
                              <a class="theme-btn" href="courses-details.html">View Course</a>
                         </div>
                     </div>
                 </div>
-                <div class="item"> 
-                    <div class="course-item"> 
-                        <div class="courses-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/courses-h1-tow.png" alt="">
-                        </div>
-                        <div class="courses-img-heading">
-                            <div class="img-heading">
-                                <h3>Defensive Driving</h3>
-                                <h4>$415</h4>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consect- etur adipiscing elit, sed do eiusmod</p>
-                            <a class="theme-btn" href="courses-details.html">View Course</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item"> 
-                    <div class="course-item"> 
-                        <div class="courses-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/couraese-h1-three.png" alt="">
-                        </div>
-                        <div class="courses-img-heading">
-                            <div class="img-heading">
-                                <h3>Foreign Driving</h3>
-                                <h4>$715</h4>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consect- etur adipiscing elit, sed do eiusmod</p>
-                            <a class="theme-btn" href="courses-details.html">View Course</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
+            <?php endwhile; wp_reset_postdata(); ?>
         </div>
     </section>
     <!-- Team-area -->
@@ -609,18 +637,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Cleint_area -->
-    <section class="cleint-area">
-        <div class="container">
-            <div class="cleint-office-logo owl-carousel">
-                <div class="item"> <img src="<?php echo get_template_directory_uri(); ?>/images/one.png" alt=""></div>
-                <div class="item"> <img src="<?php echo get_template_directory_uri(); ?>/images/two.png" alt=""></div>
-                <div class="item"> <img src="<?php echo get_template_directory_uri(); ?>/images/three.png" alt=""></div>
-                <div class="item"> <img src="<?php echo get_template_directory_uri(); ?>/images/four.png" alt=""></div>
-                <div class="item"> <img src="<?php echo get_template_directory_uri(); ?>/images/five.png" alt=""></div>
-            </div>                                                     
         </div>
     </section>
 <?php
