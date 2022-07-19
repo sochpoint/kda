@@ -56,8 +56,7 @@
             <div class="container">
                 <div class="menu-flax">
                     <div class="header-logo">
-
-							<?php the_custom_logo(); ?>
+						<?php the_custom_logo(); ?>
                     </div>
 					<?php
 						wp_nav_menu(

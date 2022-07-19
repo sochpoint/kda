@@ -126,8 +126,6 @@ Table of Content:
 .header-area .header-menu .menu-flax {
   display: flex;
   justify-content: space-between;
-  padding-top: 5px;
-  padding-bottom: 15px;
 }
 .header-area .header-menu .menu-flax .header-logo {
   padding-top: 10px;
@@ -142,7 +140,8 @@ Table of Content:
 }
 .header-area .header-menu .menu-flax .menu-item ul li a {
   display: block;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 20px;
   padding-right: 25px;
   transition: 0.3s;
   color: #111A39;
