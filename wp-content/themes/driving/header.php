@@ -33,6 +33,11 @@
         <div class="container">
             <div class="top-header">
                 <ul class="left-item">
+                    <?php if ( $contact_phone_no = get_field( 'contact_phone_no' ) ) : ?>
+                        <li>
+                            <span><i class="flaticon-telephone"></i></span>
+                            <a href="tel:<?php echo esc_html( $contact_phone_no ); ?>"><?php echo esc_html( $contact_phone_no ); ?></a></li>
+                    <?php endif; ?>
                     <li>
                         <span><i class="flaticon-telephone"></i></span>
                         <a href="tel:+123-4562-4256">+123-4562-4256</a>
