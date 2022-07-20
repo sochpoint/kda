@@ -83,7 +83,7 @@
 						printf( esc_html__( 'Made with 💖 by %1$s' ), '<a href="https://sochpoint.com/" class="text-white">Soch Point</a>' );
 						?>
 				</p>
-                    <a class="footer-button" href="index-2.html"><i class="fal fa-chevron-up"></i></a>
+                    <a class="footer-button" href="javascprit:;"><i class="fal fa-chevron-up"></i></a>
                 </div>
             </div>
         </div>

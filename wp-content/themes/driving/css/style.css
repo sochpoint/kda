@@ -872,7 +872,6 @@ p {
 
 .h3-about-area {
   overflow: hidden;
-  padding-top: 85px;
 }
 .h3-about-area .title h1 {
   max-width: 386px;
@@ -3219,6 +3218,7 @@ p {
 }
 .find-course-area .funfact-text-area {
   padding-top: 20px;
+  padding-left: 20px;
 }
 .find-course-area .find-form-area {
   background: #FFFFFF;
@@ -3713,7 +3713,7 @@ p {
   color: #E81D4F;
 }
 .footer-area .footer-bottom {
-  background: #E81D4F;
+  background: #232a47;
   overflow: hidden;
 }
 .footer-area .footer-bottom .footer-bottom-item {
