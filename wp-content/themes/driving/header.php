@@ -38,14 +38,12 @@
                             <span><i class="flaticon-telephone"></i></span>
                             <a href="tel:<?php echo esc_html( $contact_phone_no ); ?>"><?php echo esc_html( $contact_phone_no ); ?></a></li>
                     <?php endif; ?>
-                    <li>
-                        <span><i class="flaticon-telephone"></i></span>
-                        <a href="tel:+123-4562-4256">+123-4562-4256</a>
-                    </li>
-                    <li>
-                        <span class="email"><i class="flaticon-email"></i></span>
-                        <a class="maile" href="mailto:larning.driving@example.com">larning.driving@example.com</a>
-                    </li>
+                    <?php if ( $contact_email = get_field( 'contact_email' ) ) : ?>
+                        <li>
+                            <span class="email"><i class="flaticon-email"></i></span>
+                            <a class="maile" href="mailto:<?php echo esc_html( $contact_email ); ?>"><?php echo esc_html( $contact_email ); ?></a>
+                        </li>
+                    <?php endif; ?>
                 </ul>
                 <ul class="right-item">
                     <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>

@@ -295,7 +295,7 @@
             $loop = new WP_Query(
                 array(
                     'post_type' => 'our-course', // This is the name of your post type - change this as required,
-                    'posts_per_page' => -1 // This is the amount of posts per page you want to show
+                    'posts_per_page' => 6 // This is the amount of posts per page you want to show
                 )
             );
             while ( $loop->have_posts() ) : $loop->the_post();

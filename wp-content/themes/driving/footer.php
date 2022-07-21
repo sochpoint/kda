@@ -21,14 +21,19 @@
                         <div class="footer-second-item">
                             <h4>Contact</h4>
                             <ul>
-                                <li><a class="map" href="javascprit:void(0)"><span><i class="fal fa-map-marker-alt"></i></span>63739 Street Newyork City, Country</a></li>
+                            <?php if ( $contact_address = get_field( 'contact_address' ) ) : ?>
+                                <li><a class="map" href="javascprit:void(0)">
+                                    <span><i class="fal fa-map-marker-alt"></i></span><?php echo esc_html( $contact_address ); ?>
+                                </a></li>
+                            <?php endif; ?>
                             <?php if ( $contact_phone_no = get_field( 'contact_phone_no' ) ) : ?>
-                                <li> <a class="call-two" href="tel:<?php echo esc_html( $contact_phone_no ); ?>"><?php echo esc_html( $contact_phone_no ); ?></a></li>
+                                <li> <a href="tel:<?php echo esc_html( $contact_phone_no ); ?>">
+                                    <span><i class="fal fa-phone"></i></span><?php echo esc_html( $contact_phone_no ); ?>
+                                </a></li>
                             <?php endif; ?>
                             <?php if ( $contact_email = get_field( 'contact_email' ) ) : ?>
-                                <li><a class="envelope" href="mailto:<?php echo esc_html( $contact_email ); ?>"><span><i class="fal fa-envelope-open"></i></span><?php echo esc_html( $contact_email ); ?></a></li>
+                                <li><a href="mailto:<?php echo esc_html( $contact_email ); ?>"><span><i class="fal fa-envelope-open"></i></span><?php echo esc_html( $contact_email ); ?></a></li>
                             <?php endif; ?>
-                                <li><a class="admin" href="mailto:admin750@gmail.com">youremail@gmail.com</a></li>
                             </ul>
                         </div>
                     </div>
@@ -77,7 +82,7 @@
                 <div class="footer-bottom-item text-center d-block">
 				
                     <p>
-						<span>&#169;</span><?php echo date('Y'); ?> Kama's Driving School. 
+						<span>&#169;</span><?php echo date('Y'); ?> Kama's Driving Academy. 
 						<?php
 						/* translators: 1: Theme name, 2: Theme author. */
 						printf( esc_html__( 'Made with 💖 by %1$s' ), '<a href="https://sochpoint.com/" class="text-white">Soch Point</a>' );
