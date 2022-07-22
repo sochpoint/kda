@@ -50,48 +50,15 @@
                         </div>
                     </div>
                     <div class="col-lg-8">
-                        <form>
-                            <h6>Get In Touch</h6>
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="text-name">
-                                        <div>
-                                            <input type="text" placeholder="Name">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="text-name">
-                                        <div>
-                                            <input type="text" placeholder="Subject">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="text-name">
-                                        <div>
-                                            <input type="email" placeholder="Email">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="text-name">
-                                        <div>
-                                            <input type="text" placeholder="Phone">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12">
-                                    <textarea placeholder="Your Massages"></textarea>
-                                </div>
-                                <a class="theme-btn text-center m-auto" href="javascprit:void(0)">Send Now</a>
-                            </div>
-                        </form>
+            <div class="location">
+                            
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.912525239268!2d-73.9816287844535!3d40.76394864237235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f9cfcb250d%3A0xdb570ddcb766e3a8!2sNew%20York%20City%20Center!5e0!3m2!1sen!2sbd!4v1623272586807!5m2!1sen!2sbd" loading="lazy"></iframe>
+                    </div>
                     </div>
                 </div>
             </div>
             <div class="location">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.912525239268!2d-73.9816287844535!3d40.76394864237235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f9cfcb250d%3A0xdb570ddcb766e3a8!2sNew%20York%20City%20Center!5e0!3m2!1sen!2sbd!4v1623272586807!5m2!1sen!2sbd" loading="lazy"></iframe>
+                
             </div>
         </div>
     </section>

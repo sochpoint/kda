@@ -74,7 +74,7 @@
                     <div class="search-option">
                         
                         <!-- Search elament -->
-                        <a class="theme-btn" href="courses.html">Book Now</a>
+                        <a class="theme-btn" href="<?php echo get_permalink('183') ?>">Book Now</a>
                         <!-- sidebar-menu -->
                         <ul class="sidebar-menu">
                             <li><a class="menu-oparetor " id="menu-opener"><i class="fal fa-ellipsis-v"></i> </a></li>
@@ -100,7 +100,7 @@
 			</div>
             <div class="search-option">
                 <div class="menu-btn">
-                    <a class="theme-btn" href="courses.html">Book Now</a>
+                    <a class="theme-btn" href="<?php echo get_permalink('183') ?>">Book Now</a>
                 </div>
             </div>
         </div>

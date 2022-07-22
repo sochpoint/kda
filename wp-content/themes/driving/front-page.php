@@ -166,56 +166,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="form-left">
-                                    <input class="margins-dwn" type="text" placeholder="Your name">
-                                    <input type="text" placeholder="Phone Number">
-                                    <div class="input-group">
-                                        <span><i class="fas fa-caret-down"></i></span>
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected> select Car</option>
-                                            <option value="1">p-ha 245681</option>
-                                            <option value="2">p-ha 245681</option>
-                                            <option value="3">p-ha 245681</option>
-                                        </select>
-                                    </div>
-                                    <div class="input-group">
-                                        <span><i class="fas fa-caret-down"></i></span>
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected> select Date</option>
-                                            <option value="1">25/05/2021</option>
-                                            <option value="2">25/05/2021</option>
-                                            <option value="3">25/05/2021</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-left">
-                                    <div class="input-group">
-                                        <input type="email" placeholder="Your Email" class="meails padd">
-                                        <span class="select-three"><i class="fas fa-caret-down"></i></span>
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected> Select Course</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-                                    <div class="input-group">
-                                        <span><i class="fas fa-caret-down"></i></span>
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected>Select Time</option>
-                                            <option value="1">03:41 am</option>
-                                            <option value="2">03:41 am</option>
-                                            <option value="3">03:41 am</option>
-                                        </select>
-                                    </div>
-                                    <a class="theme-btn" href="javascprit:void(0)">Start Course</a>
-                                </div>
-                            </div>
-                        </div>
+                        
+                            <?php echo do_shortcode('[contact-form-7 id="44" title="Courses Booking form"]'); ?>
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInRightBig" data-wow-duration="1.30s">
@@ -223,7 +175,7 @@
                         <h1>15</h1>
                         <h2>Years Our Experience</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a class="theme-btn" href="courses-details.html">Learn More</a>
+                        <a class="theme-btn" href="<?php echo get_permalink('16') ?>">Contact Us</a>
                     </div>
                 </div>
                 
