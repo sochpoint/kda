@@ -1,10 +1,10 @@
 @font-face {
     font-family: "flaticon";
     src: url("flaticona5cd.ttf?ec562d321170499c680363ea2a8a38ce") format("truetype"),
-url("flaticona5cd.woff?ec562d321170499c680363ea2a8a38ce") format("woff"),
-url("flaticona5cd.woff2?ec562d321170499c680363ea2a8a38ce") format("woff2"),
-url("flaticona5cd.eot?ec562d321170499c680363ea2a8a38ce#iefix") format("embedded-opentype"),
-url("flaticona5cd.svg?ec562d321170499c680363ea2a8a38ce#flaticon") format("svg");
+    url("flaticona5cd.woff?ec562d321170499c680363ea2a8a38ce") format("woff"),
+    url("flaticona5cd.woff2?ec562d321170499c680363ea2a8a38ce") format("woff2"),
+    url("flaticona5cd.eot?ec562d321170499c680363ea2a8a38ce#iefix") format("embedded-opentype"),
+    url("flaticona5cd.svg?ec562d321170499c680363ea2a8a38ce#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -21,27 +21,35 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 .flaticon-steering-wheel:before {
     content: "\f101";
 }
+
 .flaticon-winner:before {
     content: "\f102";
 }
+
 .flaticon-car:before {
     content: "\f103";
 }
+
 .flaticon-telephone:before {
     content: "\f104";
 }
+
 .flaticon-car-1:before {
     content: "\f105";
 }
+
 .flaticon-email:before {
     content: "\f106";
 }
+
 .flaticon-road-with-broken-line:before {
     content: "\f107";
 }
+
 .flaticon-driving-school:before {
     content: "\f108";
 }
+
 .flaticon-manager:before {
     content: "\f109";
 }

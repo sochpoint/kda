@@ -13,26 +13,37 @@
  */
 
 get_header();
-?>
+while (have_posts()) :
+    the_post();
+    ?>
 
-	<main id="primary" class="site-main">
+    <!-- Banner-area -->
+    <section class="about-banner-area">
+        <div class="container">
+            <div class="banner-text text-center">
+                <h1 class=" wow fadeInDown" data-wow-duration="1s"><?php the_title(); ?></h1>
+                <a href="<?php echo get_home_url(); ?>">Home <span>/</span></a>
+                <a class="about-link" href="javascprit:void(0)"><?php the_title(); ?></a>
+            </div>
+        </div>
+    </section>
+    <section class="coursee-details-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div>
+                        <?php the_content();
+                        s ?>
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+                    </div>
 
-			get_template_part( 'template-parts/content', 'page' );
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cleint_area -->
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-
-	</main><!-- #main -->
 
 <?php
-get_sidebar();
+endwhile;
 get_footer();
