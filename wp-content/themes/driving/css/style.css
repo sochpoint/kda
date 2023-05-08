@@ -3779,7 +3779,7 @@ p {
 }
 
 .find-course-area .find-form-area .form-left .form-select {
-    padding: 0 10px 0 0;
+    padding: 20px 10px 0 10px;
     width: 100%;
     display: block;
     font-weight: normal;
@@ -3791,7 +3791,6 @@ p {
     font-size: 16px;
     line-height: 24px;
     color: #555555;
-    margin-bottom: 20px;
     border: honeydew;
     border-bottom: 1px solid #ddd;
 }
